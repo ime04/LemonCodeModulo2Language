@@ -9,9 +9,9 @@ class SlothMachine {
 
     play() {
         this.coins++;
-        let roulette1 : boolean = Math.random() < 0.5
-        let roulette2 : boolean = Math.random() < 0.5
-        let roulette3 : boolean = Math.random() < 0.5
+        const roulette1 : boolean = Math.random() < 0.5
+        const roulette2 : boolean = Math.random() < 0.5
+        const roulette3 : boolean = Math.random() < 0.5
         if (roulette1 && roulette2 && roulette3 ){
             console.log(`Congratulations!!!. You won ${this.coins} coins!!`);
             this.coins = 0;

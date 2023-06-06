@@ -1,23 +1,23 @@
 console.log("************** DELIVERABLE 03 *********************");
 
 interface Cat {
-    race: string,
-    color: string
+    race: string;
+    color: string;
 }
 
 const cat : Cat =  {
-    'race': 'Persa',
-    'color': 'grey'
+    race: 'Persa',
+    color: 'grey'
 }
 
 interface City {
-    name: string,
-    country: string
+    name: string;
+    country: string;
 }
 
 const city : City =  {
-    'name': 'Málaga',
-    'country': 'Spain'
+    name: 'Málaga',
+    country: 'Spain'
 }
 
 const clone = (cat: Cat, secondObject: Object = {}) => {

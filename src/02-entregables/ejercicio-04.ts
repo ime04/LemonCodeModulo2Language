@@ -11,15 +11,14 @@ export const books : Book[] = [
     { title: "Devastación", isRead: true },
 ];
 
-const isBookRead = (books: Book[], title: string) => {
-    const result : boolean = false;
+const isBookRead = (books: Book[], title: string) : boolean => {
     for (const key in books) {
         const currentBook = books[key];
         if (currentBook.title === title) {
             return currentBook.isRead;
         }
     }
-    return result;
+    return false;
 }
 
 console.log(isBookRead(books, "Devastación"));
